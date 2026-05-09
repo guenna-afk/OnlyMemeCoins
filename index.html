@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OnlyMemeCoins</title>
+  <link rel="icon" type="image/png" href="assets/images/brand/onlymemecoins-symbol-transparent.png">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="nav">
+    <button class="nav-logo" type="button" data-action="home">
+      <span class="logo-shape">
+        <img src="assets/images/brand/onlymemecoins-symbol-transparent.png" alt="" aria-hidden="true">
+      </span>
+      <span>OnlyMemeCoins</span>
+    </button>
+
+    <nav class="nav-cats" aria-label="News categories">
+      <button class="nav-cat active" type="button" data-cat="all">All</button>
+      <button class="nav-cat cat-memecoin" type="button" data-cat="memecoin">Memecoins</button>
+      <button class="nav-cat cat-markets" type="button" data-cat="markets">Markets</button>
+      <button class="nav-cat cat-bitcoin" type="button" data-cat="bitcoin">Bitcoin</button>
+      <button class="nav-cat cat-ethereum" type="button" data-cat="ethereum">Ethereum</button>
+      <button class="nav-cat cat-altcoin" type="button" data-cat="altcoin">Altcoins</button>
+      <button class="nav-cat cat-regulation" type="button" data-cat="regulation">Regulation</button>
+      <button class="nav-cat cat-security" type="button" data-cat="security">Security</button>
+    </nav>
+
+    <input class="nav-search" id="search-input" type="search" placeholder="Search real news...">
+  </header>
+
+  <div class="ticker-strip" id="ticker-strip">
+    <span>Loading live prices...</span>
+  </div>
+
+  <div class="layout">
+    <main class="main">
+      <section id="home-view">
+        <div class="page-header">
+          <div>
+            <div class="page-title">Live crypto news desk</div>
+            <h1 class="page-desc">Real headlines, real sources, live memecoin prices.</h1>
+          </div>
+          <button class="refresh-btn" type="button" id="refresh-news">Refresh</button>
+        </div>
+
+        <div class="ad">google adsense · leaderboard</div>
+
+        <section class="featured" id="featured-card" aria-live="polite">
+          <div class="skeleton">Loading featured story...</div>
+        </section>
+
+        <div class="section-title">
+          <span>Top Stories</span>
+          <span class="see-all" id="news-status">Connecting to feeds...</span>
+        </div>
+        <div class="grid2" id="top-grid"></div>
+
+        <div class="ad ad-inline">google adsense · in-content</div>
+
+        <div class="section-title" id="list-title">
+          <span>All News</span>
+          <span class="see-all" id="list-count"></span>
+        </div>
+        <div id="article-list" class="article-list"></div>
+        <div id="pagination" class="pagination" aria-label="News pagination"></div>
+      </section>
+
+      <section class="article-page" id="article-view">
+        <button class="article-back" type="button" data-action="home">← Back to news</button>
+        <div id="article-content-area"></div>
+      </section>
+    </main>
+
+    <aside class="sidebar">
+      <div class="ad-sb">adsense 300×250</div>
+
+      <section class="sidebar-block">
+        <div class="sb-title">Trending Now</div>
+        <div id="trending-list" class="trend-list">
+          <div class="skeleton">Loading trends...</div>
+        </div>
+      </section>
+
+      <div class="ad-sb ad-compact">adsense native</div>
+
+      <section class="sidebar-block">
+        <div class="sb-title">Live Prices</div>
+        <div id="price-list">
+          <div class="skeleton">Loading prices...</div>
+        </div>
+      </section>
+
+      <section class="sidebar-block">
+        <div class="sb-title">Quick Tags</div>
+        <div class="tags" id="tag-list">
+          <button class="tag-item" type="button" data-search="doge">doge</button>
+          <button class="tag-item" type="button" data-search="pepe">pepe</button>
+          <button class="tag-item" type="button" data-search="solana">solana</button>
+          <button class="tag-item" type="button" data-search="bitcoin">bitcoin</button>
+          <button class="tag-item" type="button" data-search="ethereum">ethereum</button>
+          <button class="tag-item" type="button" data-search="hack">hack</button>
+          <button class="tag-item" type="button" data-search="sec">sec</button>
+          <button class="tag-item" type="button" data-search="etf">etf</button>
+          <button class="tag-item" type="button" data-search="airdrop">airdrop</button>
+          <button class="tag-item" type="button" data-search="pump">pump</button>
+        </div>
+      </section>
+
+      <div class="ad-sb ad-compact">adsense square</div>
+
+      <div class="ad-sb ad-tall">adsense 300×600</div>
+    </aside>
+  </div>
+
+  <div class="mobile-ad">google adsense · mobile anchor</div>
+
+  <script src="assets/js/articles.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
